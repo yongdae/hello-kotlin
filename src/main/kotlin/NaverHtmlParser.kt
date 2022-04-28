@@ -1,4 +1,3 @@
-
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 
@@ -24,5 +23,12 @@ class NaverHtmlParser {
 
         document.select("p")
             .forEach(System.out::println)
+    }
+
+    fun readAndGetCategoryList() {
+        val document: Document = Jsoup.connect(SITE_URL).get()
+
+        document.select("#NM_THEME_CATE_LIST > li")
+            .forEach { println(it.text()) }
     }
 }

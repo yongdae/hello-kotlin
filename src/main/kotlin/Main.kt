@@ -2,6 +2,9 @@ fun main() {
 //    NaverHtmlParser()
 //        .read()
 
+//    NaverHtmlParser()
+//        .readWithOption()
+
     NaverHtmlParser()
-        .readWithOption()
+        .readAndGetCategoryList()
 }
