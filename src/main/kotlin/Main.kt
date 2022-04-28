@@ -1,4 +1,7 @@
 fun main() {
+//    NaverHtmlParser()
+//        .read()
+
     NaverHtmlParser()
-        .read()
+        .readWithOption()
 }
